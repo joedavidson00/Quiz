@@ -4,6 +4,7 @@
 //
 //  Created by Joseph Davidson on 1/23/19.
 //  Copyright © 2019 Joseph Davidson. All rights reserved.
+// High Point University
 //
 
 import UIKit
@@ -18,14 +19,26 @@ class ViewController: UIViewController {
     let questions: [String] = [
         "What is 7+7?",
         "What is the capital of Vermont?",
-        "What is cognac made from?"
+        "What is cognac made from?",
+        "What is Taylor Swift's full name?",
+        "How many Golden Globe Award nominations has Taylor Swift received?",
+        "What Social media platform did Taylor Swift use to develop her fanbase?",
+        "What is Taylor Swift's favorite Dessert?",
+        "What is Taylor Swift's lucky number?"
     ]
     
     // the list with corresponding answers
     let answers: [String] = [
         "14",
         "Montpelier",
-        "Grapes"
+        "Grapes",
+        "Taylor Alison Swift",
+        "2",
+        "Myspace",
+        "Cheesecake",
+        "13"
+        
+        
     ]
     
     //use this to change the question and answer values
@@ -44,7 +57,7 @@ class ViewController: UIViewController {
         answerLabel.text = "????"
         
     }
-
+    
     @IBAction func showAnswer(_ sender: UIButton) {
         // this sets the answer to the answer corresponding with the question (index value)
         let answer: String = answers[currentQuestionIndex]
@@ -55,6 +68,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         questionLabel.text = questions[currentQuestionIndex]
     }
-
+    
 }
+
 
